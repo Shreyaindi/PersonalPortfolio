@@ -1,0 +1,192 @@
+/* 1. Basic Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+    color: #26334d;
+    line-height: 1.6;
+}
+
+/* 2. Header and Navigation */
+
+header {
+    background-color: #172554;
+    padding: 20px 8%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 28px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #60a5fa;
+}
+
+/* 3. About Section */
+
+#about {
+    min-height: 400px;
+    padding: 80px 10%;
+    background: linear-gradient(135deg, #dbeafe, #eff6ff);
+    text-align: center;
+}
+
+#about h1 {
+    font-size: 42px;
+    color: #172554;
+    margin-bottom: 15px;
+}
+
+#about h2 {
+    color: #2563eb;
+    margin-bottom: 20px;
+}
+
+#about p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 18px;
+}
+
+/* 4. Common Section Styling */
+
+section {
+    padding: 60px 10%;
+}
+
+section > h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #172554;
+    margin-bottom: 35px;
+}
+
+/* 5. Skills and Projects Cards */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.cards div {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #dbeafe;
+    text-align: center;
+    transition: 0.3s;
+}
+
+/* Card Hover Effect */
+
+.cards div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+.cards h3 {
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+/* 6. Contact Section */
+
+#contact {
+    text-align: center;
+    background-color: #dbeafe;
+}
+
+#contact p {
+    margin-bottom: 25px;
+}
+
+#contact a {
+    display: inline-block;
+    background-color: #172554;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    margin: 8px;
+    border-radius: 6px;
+}
+
+#contact a:hover {
+    background-color: #2563eb;
+}
+
+/* 7. Footer */
+
+footer {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* 8. Mobile Responsive Design */
+
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    #about {
+        padding: 50px 7%;
+    }
+
+    #about h1 {
+        font-size: 30px;
+    }
+
+    section {
+        padding: 45px 7%;
+    }
+
+    #contact a {
+        margin: 5px;
+    }
+}
+
+/* 9. Keyboard Focus */
+
+a:focus {
+    outline: 3px solid orange;
+    outline-offset: 4px;
+}
